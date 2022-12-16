@@ -85,6 +85,7 @@ nav {
 .NavLogo h2 {
     color: #1450e7;
     font-family: Impact;
+    font-weight: bold;
 }
 
 .NavLogo img {
@@ -372,6 +373,7 @@ nav {
 
 .FooterBoxLogo h2 {
     text-shadow: 1px 1px 2px #000;
+    font-weight: bold;
 }
 
 .FooterBox h2 {
