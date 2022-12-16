@@ -14,7 +14,10 @@
     
         <!--- CSS -->
     <link rel="stylesheet" href="./css/style.css"> 
-    
+
+        <!--- AOS animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -33,7 +36,6 @@
         </nav>
         <div class="NavToggle">
             <i class="open fa-solid fa-bars"></i>
-            <i class="toggled fa-solid fa-bars-staggered"></i>
         </div>
     </header>
 
@@ -54,10 +56,10 @@
 
         <section class="Info container">
             <div class="InfoAU">
-                <div class="InfoConteinerImg col-md-4 .col-sm-12">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"  class="InfoConteinerImg col-md-4 .col-sm-12">
                     <img src="./assets/img/camion.jpg" alt="">
                 </div>
-                <div class="InfoText col-md-8 .col-sm-12">
+                <div data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine"  class="InfoText col-md-8 .col-sm-12">
                     <h4>Quienes somos?</h4>
                     <h2>Somos una empresa con más de 25 años de experiencia en la industria alimenticia</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi inventore tempore ipsum, blanditiis nesciunt quisquam deleniti aspernatur? Debitis, unde vero eum illo veritatis exercitationem et quisquam voluptates id, reprehenderit itaque?</p>
@@ -80,10 +82,10 @@
             </div>
                
             <div class="InfoAU" id="InfoAu2"> 
-                <div class="InfoConteinerImg col-md-4 .col-sm-12">
+                <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="InfoConteinerImg col-md-4 .col-sm-12">
                     <img src="./assets/img/galpon.jpeg" alt="">
                 </div>
-                <div class="InfoText col-md-8 .col-sm-12">
+                <div data-aos="fade-left" data-aos-delay="300" data-aos-offset="300" data-aos-easing="ease-in-sine" class="InfoText col-md-8 .col-sm-12">
                     <h4>A qué nos dedicamos?</h4>
                     <h2>Nos dedicamos a la venta y reparto de productos que requieren frío </h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi inventore tempore ipsum, blanditiis nesciunt quisquam deleniti aspernatur? Debitis, unde vero eum illo veritatis exercitationem et quisquam voluptates id, reprehenderit itaque?</p>
@@ -93,7 +95,9 @@
         </section>
 
         <section id="MAP" class="Map container">
-            <div class="MapConteiner col-md-4 .col-sm-12">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="MapConteiner col-md-4 .col-sm-12">
                 <a href="https://goo.gl/maps/1ocJ6y4QXJUAZjoK9"><img src="./assets/img/ubicacion.png" alt=""></a>
             </div>
             <div class="MapText col-md-8 .col-sm-12">
@@ -140,14 +144,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
      <!-- Counterup -->
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>   
-    
-    <script src="./js/main.js"></script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1200
+        })
+    </script>
 
+    <!-- Aos animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Main JS-->
+    <script src="./js/main.js"></script>
+
 </body>
 </html>

@@ -824,11 +824,7 @@ textarea {
         transition: all 0.4s;
     }
 
-    .toggled.abierto {
-        display: block;
-        transition: all 0.4s;
-    }
-    
+
     .NavBar {
         flex-direction: column;
         height: 70%;
@@ -842,10 +838,14 @@ textarea {
         margin-right: 30px;
         margin-left: auto;
         z-index: 99;
+        transition: all 0.5s;
     }
 
-    .toggled {
-        display: none;
+    .NavToggle.active {
+        rotate: 90deg;
+        transition: all 0.5s;
+        position: fixed;
+        right: 0;
     }
 
 }
