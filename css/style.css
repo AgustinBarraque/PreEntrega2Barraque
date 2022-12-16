@@ -27,7 +27,7 @@ body {
   display: flex;
   font-family: impact;
   font-size: 1.5em;
-  font-weight: 200;
+  font-weight: 500;
   justify-content: center;
   line-height: 1.75rem;
   padding: .75rem 1.65rem;
@@ -707,9 +707,6 @@ textarea {
         font-weight: 700;
     }
 
-    .ImgPrincipalTitle {
-        height: 60vh;
-    }
     .ImgPrincipalTitle p {
         font-size: 2em;
     }
@@ -778,7 +775,7 @@ textarea {
 
     .Map {
         flex-direction: column;
-        height: 90vh;
+        height: 100vh;
     }
     .MapText p i {
         rotate: 90deg;
