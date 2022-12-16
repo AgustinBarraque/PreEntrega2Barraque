@@ -123,6 +123,10 @@ nav {
     margin-right: 5px;
 }
 
+.NavToggle {
+    display: none;
+}
+
                         /*BODY* scc 1*/
 
 
@@ -808,6 +812,7 @@ textarea {
         padding: 40px 0;
         background: #fff;
         transition: all 0.3s ease;
+        z-index: 99;
     }
 
     .Nav.active {
@@ -826,10 +831,11 @@ textarea {
     
     .NavBar {
         flex-direction: column;
-        height: 50%;
+        height: 70%;
     }
 
     .NavToggle {
+        display: block;
         color: #1450e7;
         font-size: 2em;
         margin: 20px;
