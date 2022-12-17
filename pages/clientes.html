@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarraqueHnos</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
-    <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BarraqueHnos</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
+        <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
+    
+            <!--bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <!--- CSS -->
+        <link rel="stylesheet" href="../css/style.css"> 
+    
+            <!--- AOS animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+            <!-- swiper js-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    
+    </head>
 <body>
     <header>
         <div class="NavLogo">
             <a href="./index.html"><img src="../assets/img/icono.ico" alt=""></a>
             <a href="./index.html"><h2>BarraqueHnos</h2></a>
         </div>
-        <nav>
+        <nav class="Nav">
             <ul class="NavBar">
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
-                <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
-                <li><a href="../index.html#MAP"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
+                <li class="links"><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="links"><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
+                <li class="links"><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+                <li class="links"><a href="../index#MAP.html"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
             </ul>
         </nav>
+        <div class="NavToggle">
+            <i class="open fa-solid fa-bars"></i>
+        </div>
     </header>
 
     <main>
-        <section class="Info">
-            <div class="InfoConteiner2">
-                <div class="InfoAU2"> 
-                    <div class="InfoConteinerImg">
+        <section class="Info container">
+            <div class="InfoConteiner">
+                <div class="InfoAU"> 
+                    <div id="ImagenC" class="InfoConteinerImg col-md-4 .col-sm-12">
                         <img src="../assets/img/distribucion.jpg" alt="">
                     </div>
-                    <div class="InfoTextC">
+                    <div class="InfoText col-md-8 .col-sm-12">
                         <h3>Distribución y entrega de mercaderia</h3>
                         <p>Contamos con una flota propia de vehículos dedicados exclusivamente a la distribución de los pedidos. Con fechas programadas y seguimiento día a día para brindarles entregas 100% efectivas.</p>
                         <h2>En San Andrés de Giles</h2>
@@ -43,92 +60,141 @@
                 </div>
         </section>
 
-        <section class="Pedido">
+        <section id="Tarjetaid" class=" Pedido container">
             <h4>¿Cómo hacer tu pedido?</h4>
-            <div class="PedidoContainer">
-                <div class="tarjeta">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="tarjetaText">
-                        <h2>Teléfono</h2>
-                        <h3>2325402234</h3>
+            <div class="swiper mySwiper PedidoContainer">
+                <div class="swiper-wrapper TarjetaContainer">
+                    <div class="tarjeta swiper-slide">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="tarjetaText">
+                            <h2>Teléfono</h2>
+                            <h3>2325402234</h3>
+                        </div>
+                    </div>
+                    <div class="tarjeta swiper-slide">
+                        <i class="fa-solid fa-shop"></i>
+                        <div class="tarjetaText">
+                            <h2>Local</h2>
+                            <h3>Italia 326, San Andres de Giles</h3>
+                        </div>
+                    </div>
+                    <div class="tarjeta swiper-slide">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div class="tarjetaText">
+                            <h2>Vendedor</h2>
+                            <h3>Solicitános un vendedor en la sección contacto</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="tarjeta">
-                    <i class="fa-solid fa-shop"></i>
-                    <div class="tarjetaText">
-                        <h2>Local</h2>
-                        <h3>Italia 326, San Andres de Giles</h3>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <i class="fa-solid fa-user-tie"></i>
-                    <div class="tarjetaText">
-                        <h2>Vendedor</h2>
-                        <h3>Solicitános un vendedor en la sección contacto</h3>
-                    </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
             
-        <section class="Pedido">
+        <section id="PedidoClientes" class="Pedido container-fluid">
             <h4>¿Quienes son nuestros clientes?</h4>
-            <div class="ClientesConteiner">
-                <div class="ClientesCard">
-                    <img src="../assets/img/local.jpg" alt="">
-                    <h2>Negocios</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper ClientesConteiner">
+                    <div class="ClientesCard swiper-slide">
+                        <img src="../assets/img/local.jpg" alt="">
+                        <h2>Negocios</h2>
+                    </div>
+                    <div class="ClientesCard swiper-slide">
+                        <img src="../assets/img/kiosco.jpg" alt="">
+                        <h2>Kioscos</h2>
+                    </div>
+                    <div class="ClientesCard swiper-slide">
+                        <img src="../assets/img/empresa.png" alt="">
+                        <h2>Empresas</h2>
+                    </div>
+                    <div class="ClientesCard swiper-slide">
+                        <img src="../assets/img/colegio.jpg" alt="">
+                        <h2>Instituciones</h2>
+                    </div>
+                    <div class="ClientesCard swiper-slide">
+                        <img src="../assets/img/autoservicio.webp" alt="">
+                        <h2>Autoservicios</h2>
+                    </div>
+                    <div class="ClientesCard swiper-slide">
+                        <img src="../assets/img/cocinero.png" alt="">
+                        <h2>Personas que elaboran</h2>
+                    </div>
                 </div>
-                <div class="ClientesCard">
-                    <img src="../assets/img/kiosco.jpg" alt="">
-                    <h2>Kioscos</h2>
-                </div>
-                <div class="ClientesCard">
-                    <img src="../assets/img/empresa.png" alt="">
-                    <h2>Empresas</h2>
-                </div>
-                <div class="ClientesCard">
-                    <img src="../assets/img/colegio.jpg" alt="">
-                    <h2>Instituciones</h2>
-                </div>
-                <div class="ClientesCard">
-                    <img src="../assets/img/autoservicio.webp" alt="">
-                    <h2>Autoservicios</h2>
-                </div>
-                <div class="ClientesCard">
-                    <img src="../assets/img/cocinero.png" alt="">
-                    <h2>Personas que elaboran</h2>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
     </main>
 
-    <footer class="FooterP">
-       <div class="FooterContainer">
-            <div class="FooterBoxLogo">
-                <div class="NavLogo">
-                    <img src="../assets/img/icono.ico" alt="">
-                    <h2>BarraqueHnos</h2>
-                </div>
-                <div class="FooterBtn">
-                    <a href="./contact.html" class="Btn">Envianos un Mensaje</a>
-                </div>
-            </div>
-            <div class="FooterBox">
-                <h2>Horarios</h2>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
-                </ul>
-            </div>
-            <div class="FooterBox">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>2325442601</li>
-                    <li><i class="fa-solid fa-phone"></i>2325402234</li>
-                    <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos@hotmail.com</li>
-                </ul>
-            </div>
-       </div>
-    </footer>
+    <footer class="FooterP container">
+        <div class="FooterContainer">
+             <div class="FooterBoxLogo col-md-4 col-sm-12">
+                 <div class="NavLogo">
+                     <img src="./assets/img/icono.ico" alt="">
+                     <h2>BarraqueHnos</h2>
+                 </div>
+                 <div class="FooterBtn">
+                     <a href="./pages/contact.html" class="Btn">Envianos un Mensaje</a>
+                 </div>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Horarios</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
+                 </ul>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Contacto</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-phone"></i>2325442601</li>
+                     <li><i class="fa-solid fa-phone"></i>2325402234</li>
+                     <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos @hotmail.com</li>
+                 </ul>
+             </div>
+        </div>
+     </footer>
+ 
+     <!-- Jquery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <!-- Waypoint -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <!-- Counterup -->
+     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>   
+     <script>
+         $('.counter').counterUp({
+             delay: 10,
+             time: 1200
+         })
+     </script>
+ 
+     <!-- Aos animations -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+     <script>
+         AOS.init();
+     </script>
+ 
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <!--Swiper js-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+     </script>
+
+     <!--Main JS-->
+     <script src="../js/main.js"></script>
 </body>
 </html>
