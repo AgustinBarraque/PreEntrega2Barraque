@@ -929,10 +929,19 @@ textarea {
         max-width: 100%;
     }
 
+    .Pedido .swiper-button-prev {
+        display: none;
+    }
+
     #Tarjetaid .swiper-button-next {
         display: block;
     }
     
+    #Tarjetaid .swiper-button-prev {
+        display: block;
+    }
+
+
      #ImagenC img {
         object-fit: initial;
     }
