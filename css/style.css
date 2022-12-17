@@ -668,6 +668,9 @@ textarea {
     text-align: center;
 }
 
+#ImagenC img {
+    background-color: #fff;
+}
 
 /*-----------------------------------------CLIENTES CARD*/
 
