@@ -933,9 +933,6 @@ textarea {
         display: block;
     }
     
-    #Tarjetaid .swiper-button-prev {
-        display: block;
-    }
      #ImagenC img {
         object-fit: initial;
     }
