@@ -1022,6 +1022,11 @@ textarea {
         height: 20vh;
     }
 
+    .Imputs .Btn {
+        margin: auto;
+        margin-top: 30px;
+    }
+
     .Imputs textarea {
         font-size: 1.5em;
         padding-top: 25%;
