@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarraqueHnos</title>
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
     <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
+
+           <!--bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+         <!--- CSS -->
+     <link rel="stylesheet" href="../css/style.css"> 
+
+         <!--- AOS animations -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <!-- swiper js-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    
 </head>
 <body>
     <header>
@@ -15,37 +28,40 @@
             <a href="./index.html"><img src="../assets/img/icono.ico" alt=""></a>
             <a href="./index.html"><h2>BarraqueHnos</h2></a>
         </div>
-        <nav>
+        <nav class="Nav">
             <ul class="NavBar">
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
-                <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
-                <li><a href="../index.html#MAP"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
+                <li class="links"><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="links"><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
+                <li class="links"><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+                <li class="links"><a href="../index#MAP.html"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
             </ul>
         </nav>
+        <div class="NavToggle">
+            <i class="open fa-solid fa-bars"></i>
+        </div>
     </header>
 
     <main>
         <section class="Principal">
             <div class="shape"></div>
-            <div class="Form">
-                <div class="FormImput">
+            <div class="Form container">
+                <div class="FormImput col-md-6 col-sm-12">
                     <div>
                         <h2>Contáctanos</h2>
                         <p>como podemos ayudarte?</p>
                     </div>
-                    <div class="Imputs">
+                    <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0" class="Imputs">
                         <input type="text" placeholder="Nombre">
                         <input type="email" placeholder="Email">
                         <input type="number" placeholder="Número de Telefono">
                         <textarea placeholder="Motivo de la consulta"></textarea>
                     </div>
                 </div>
-                <div class="FormInfo">
-                    <img src="../assets/img/gestion-logistica.png" alt="">
+                <div class="FormInfo col-md-6 col-sm-12">
+                    <img data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" src="../assets/img/gestion-logistica.png" alt="">
                     <ul>
                         <li><i class="fa-solid fa-phone"></i>2325402234</li>
-                        <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos@hotmail.com</li>
+                        <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos@ hotmail.com</li>
                         <li><i class="fa-sharp fa-solid fa-location-dot"></i>San Andrés de Giles, Buenos Aires, Argentina.</li>
                     </ul>
                 </div>
@@ -53,34 +69,73 @@
         </section>
     </main>
 
-    <footer class="FooterP">
-       <div class="FooterContainer">
-            <div class="FooterBoxLogo">
-                <div class="NavLogo">
-                    <img src="../assets/img/icono.ico" alt="">
-                    <h2>BarraqueHnos</h2>
-                </div>
-                <div class="FooterBtn">
-                    <a href="./contact.html" class="Btn">Envianos un Mensaje</a>
-                </div>
-            </div>
-            <div class="FooterBox">
-                <h2>Horarios</h2>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
-                </ul>
-            </div>
-            <div class="FooterBox">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>2325442601</li>
-                    <li><i class="fa-solid fa-phone"></i>2325402234</li>
-                    <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos@hotmail.com</li>
-                </ul>
-            </div>
-       </div>
-    </footer>
+    <footer class="FooterP container">
+        <div class="FooterContainer">
+             <div class="FooterBoxLogo col-md-4 col-sm-12">
+                 <div class="NavLogo">
+                     <img src="../assets/img/icono.ico" alt="">
+                     <h2>BarraqueHnos</h2>
+                 </div>
+                 <div class="FooterBtn">
+                     <a href="./pages/contact.html" class="Btn">Envianos un Mensaje</a>
+                 </div>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Horarios</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
+                 </ul>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Contacto</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-phone"></i>2325442601</li>
+                     <li><i class="fa-solid fa-phone"></i>2325402234</li>
+                     <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos @hotmail.com</li>
+                 </ul>
+             </div>
+        </div>
+     </footer>
+ 
+     <!-- Jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Waypoint -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+   <!-- Counterup -->
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>   
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1200
+        })
+     </script>
+ 
+    <!-- Aos animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+    <script>
+        AOS.init();
+    </script>
+ 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <!--Swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script> 
+   <!--Main JS-->
+   <script src="../js/main.js"></script>
 </body>
 </html>

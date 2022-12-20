@@ -444,7 +444,7 @@ nav {
     display: flex;
     width: 1000px;
     height: 700px;
-    z-index: 99;
+    z-index: 90;
 }
     
 .FormImput { 
@@ -967,5 +967,125 @@ textarea {
         margin-bottom: 20%;
     }
 
+    .ClientesCard {
+        border: #fff;
+    }
 
+}
+
+
+/*-------------------Contact media querys--------------*/
+
+@media screen and (max-width: 992px) {
+    .Form {
+        width: 80%;
+    }
+
+    .FormInfo ul li {
+        font-size: 1.1em;
+        color: #06283D;
+    }
+
+    .FormInfo i {
+        color: #1450e7;
+    }
+
+    .FormInfo {
+        justify-content: center;
+    }
+
+    .Imputs input {
+        font-size: 1em;
+    }
+
+    .Imputs textarea {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .Form {
+        flex-direction: column;
+    }
+
+    .FormInfo {
+        width: 100%;
+    }
+
+    .FormImput {
+        width: 100%;
+    }
+
+    .Imputs input {
+        font-size: 1.5em;
+        justify-content: space-between;
+        height: 20vh;
+    }
+
+    .Imputs textarea {
+        font-size: 1.5em;
+        padding-top: 25%;
+        padding-bottom: 10px;
+        height: 60%;
+        overflow-y: hidden;
+    }
+
+    .Imputs {
+        padding: 0;
+    }
+
+    .FormInfo {
+        margin-top: 15%;
+    }
+
+    .FormInfo img {
+        width: 70%;
+        margin: auto;
+    }
+    .FormInfo ul {
+        font-size: 1em;
+        padding: 20px;
+    }
+    
+    .FormInfo ul li {
+        margin: 8px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    
+    .Imputs {
+        width: 100%;
+    }
+
+    .Imputs input {
+        font-size: 1.1em;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    .Imputs textarea {
+        font-size: 1.1em;
+        padding-top: auto;
+        padding-bottom: 1px;
+        height: 40%;
+    }
+
+    .FormInfo img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .FormImput p {
+        font-size: 1.1em;
+    }
+
+    .FormInfo {
+        width: 100%;
+    }
+    .FormInfo ul {
+        padding: 0;
+        font-size: 0.7em;
+    }
 }
