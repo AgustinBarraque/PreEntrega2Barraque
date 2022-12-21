@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarraqueHnos</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
-    <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BarraqueHnos</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
+        <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
+    
+            <!--bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <!--- CSS -->
+        <link rel="stylesheet" href="../css/style.css"> 
+    
+            <!--- AOS animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+            <!-- swiper js-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    
+    </head>
 <body>
     <header>
         <div class="NavLogo">
             <a href="./index.html"><img src="../assets/img/icono.ico" alt=""></a>
             <a href="./index.html"><h2>BarraqueHnos</h2></a>
         </div>
-        <nav>
+        <nav class="Nav">
             <ul class="NavBar">
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
-                <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
-                <li><a href="../index.html#MAP"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
+                <li class="links"><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="links"><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
+                <li class="links"><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+                <li class="links"><a href="../index.html#MAP"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
             </ul>
         </nav>
+        <div class="NavToggle">
+            <i class="open fa-solid fa-bars"></i>
+        </div>
     </header>
 
     <main>
@@ -33,13 +50,13 @@
             </div>
         </section>
 
-        <section class="Info">
-            <div class="InfoConteiner2">
-                <div class="InfoAU2"> 
-                    <div class="InfoConteinerImg">
+        <section class="Info container">
+            <div class="InfoConteiner">
+                <div class="InfoAU"> 
+                    <div class="InfoConteinerImg col-md-4 .col-sm-12">
                         <img src="../assets/img/MarcasC.png" alt="">
                     </div>
-                    <div class="InfoText">
+                    <div class="InfoText col-md-8 .col-sm-12">
                         <h3>Con quienes trabajamos?</h3>
                         <h2>Trabajamos con varias marcas, en su mayoria fiambres, snacks, galletitas, entre otras</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi inventore tempore ipsum, blanditiis nesciunt quisquam deleniti aspernatur? Debitis, unde vero eum illo veritatis exercitationem et quisquam voluptates id, reprehenderit itaque?</p>
@@ -48,39 +65,102 @@
                 </div>
         </section>
         <section class="slider">
-            <h2>Slider</h2>
-            <img src="../assets/img/InicioAboutUs.png" alt="">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div id="SwiperImg" class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </div>
+                  <div id="SwiperImg" class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div id="SwiperImg" class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </div>
+                  <div id="SwiperImg" class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </section>
     </main>
 
-    <footer class="FooterP">
-       <div class="FooterContainer">
-            <div class="FooterBoxLogo">
-                <div class="NavLogo">
-                    <img src="../assets/img/icono.ico" alt="">
-                    <h2>BarraqueHnos</h2>
-                </div>
-                <div class="FooterBtn">
-                    <a href="./contact.html" class="Btn">Envianos un Mensaje</a>
-                </div>
-            </div>
-            <div class="FooterBox">
-                <h2>Horarios</h2>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
-                </ul>
-            </div>
-            <div class="FooterBox">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>2325442601</li>
-                    <li><i class="fa-solid fa-phone"></i>2325xxxxxx</li>
-                    <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos@hotmail.com</li>
-                </ul>
-            </div>
-       </div>
-    </footer>
+    <footer class="FooterP container">
+        <div class="FooterContainer">
+             <div class="FooterBoxLogo col-md-4 col-sm-12">
+                 <div class="NavLogo">
+                     <img src="../assets/img/icono.ico" alt="">
+                     <h2>BarraqueHnos</h2>
+                 </div>
+                 <div class="FooterBtn">
+                     <a href="./contact.html" class="Btn">Envianos un Mensaje</a>
+                 </div>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Horarios</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
+                 </ul>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Contacto</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-phone"></i>2325442601</li>
+                     <li><i class="fa-solid fa-phone"></i>2325402234</li>
+                     <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos @hotmail.com</li>
+                 </ul>
+             </div>
+        </div>
+     </footer>
+ 
+     <!-- Jquery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <!-- Waypoint -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <!-- Counterup -->
+     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>   
+     <script>
+         $('.counter').counterUp({
+             delay: 10,
+             time: 1200
+         })
+     </script>
+ 
+     <!-- Aos animations -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+     <script>
+         AOS.init();
+     </script>
+ 
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <!--Swiper js-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          effect: "fade",
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+     <!--Main JS-->
+     <script src="../js/main.js"></script>
 </body>
 </html>

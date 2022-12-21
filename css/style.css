@@ -445,8 +445,10 @@ nav {
     width: 1000px;
     height: 700px;
     z-index: 90;
+    overflow-x: hidden;
 }
-    
+
+
 .FormImput { 
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
@@ -512,10 +514,12 @@ textarea {
 .FormInfo ul li {
     font-size: 1.3em;
     font-weight: bold;
+    color: #0B254B;
 }
 
 .FormInfo i {
     margin-right: 7px;
+    color: #1450e7;
 }
 
                                  /*SOBRE NOSOTROS (ABOUT US)*/ 
@@ -1094,3 +1098,39 @@ textarea {
         font-size: 0.7em;
     }
 }
+
+/*------------------About us -------------------------*/
+.slider {
+    height: 80vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #SwiperImg {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  #SwiperImg img {
+    display: block;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 720px) {
+    .slider {
+        padding: 1px;
+        margin-top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .slider {
+        height: 60vh;
+    }
+  }
