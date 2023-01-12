@@ -1,90 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarraqueHnos</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
-    <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BarraqueHnos</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/icono.ico">
+        <script src="https://kit.fontawesome.com/699ea11888.js" crossorigin="anonymous"></script>
+    
+            <!--bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <!--- CSS -->
+        <link rel="stylesheet" href="../css/style.css"> 
+    
+            <!--- AOS animations -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+            <!-- swiper js-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    
+    </head>
 <body>
     <header>
         <div class="NavLogo">
             <a href="./index.html"><img src="../assets/img/icono.ico" alt=""></a>
             <a href="./index.html"><h2>BarraqueHnos</h2></a>
         </div>
-        <nav>
+        <nav class="Nav">
             <ul class="NavBar">
-                <li><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
-                <li><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
-                <li><a href="../index.html#MAP"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
+                <li class="links"><a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="links"><a href="./aboutus.html"><i class="fa-solid fa-users"></i>Quienes Somos?</a></li>
+                <li class="links"><a href="./contact.html"><i class="fa-solid fa-phone"></i>Contacto</a></li>
+                <li class="links"><a href="../index.html#MAP"><i class="fa-sharp fa-solid fa-location-dot"></i>Dónde Encontrarnos</a></li>
             </ul>
         </nav>
-    </header>
+        <div class="NavToggle">
+            <i class="open fa-solid fa-bars"></i>
+        </div>
+    </header>   
 
     <main>
-        <section class="galery">
-            <div class="marcas">
-                <img src="../assets/marcas/1.png" alt="">
-                <img src="../assets/marcas/2.png" alt="">
-                <img src="../assets/marcas/3.jpg" alt="">
-                <img src="../assets/marcas/4.jpg" alt="">
-            </div>
-            <div class="marcas">
-                <img src="../assets/marcas/6.png" alt="">
-                <img src="../assets/marcas/7.png" alt="">
-                <img src="../assets/marcas/8.jpg" alt="">
-                <img src="../assets/marcas/9.png" alt="">
-                <img src="../assets/marcas/10.jpg" alt="">
-            </div>
-            <div class="marcas">
-                <img src="../assets/marcas/11.jpg" alt="">
-                <img src="../assets/marcas/12.jpg" alt="">
-                <img src="../assets/marcas/13.png" alt="">
-                <img src="../assets/marcas/14.jpg" alt="">
-                <img src="../assets/marcas/15.jpg" alt="">
-            </div>
-            <div class="marcas">
-                <img src="../assets/marcas/16.jpg" alt="">
-                <img src="../assets/marcas/17.jpg" alt="">
-                <img src="../assets/marcas/18.png" alt="">
-                <img src="../assets/marcas/19.png" alt="">
-                <img src="../assets/marcas/20.png" alt="">
-            </div>
-        </section>
+        <div class="grid-container">
+            <div
+              class="grid-item tall"
+              style="background-image: url('../assets/marcas/1.png')"
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/2.png');
+              "
+            ></div>
+      
+            <div
+              class="grid-item wide"
+              style="
+                background-image: url('../assets/marcas/3.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/4.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/5.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/6.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/7.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="background-image: url('../assets/marcas/8.jpg')"
+            ></div>
+            <div
+              class="grid-item tall wide"
+              style="
+                background-image: url('../assets/marcas/9.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/10.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/11.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/12.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/13.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/14.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/15.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/16.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/17.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/18.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/19.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/20.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/21.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/22.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/23.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/24.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/25.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/26.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/27.png');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/28.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/29.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/30.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/31.jpg');
+              "
+            ></div>
+            <div
+              class="grid-item"
+              style="
+                background-image: url('../assets/marcas/32.jpg');
+              "
+            ></div>
+          </div>
     </main>
 
-    <footer class="FooterP">
-       <div class="FooterContainer">
-            <div class="FooterBoxLogo">
-                <div class="NavLogo">
-                    <img src="../assets/img/icono.ico" alt="">
-                    <h2>BarraqueHnos</h2>
-                </div>
-                <div class="FooterBtn">
-                    <a href="./contact.html" class="Btn">Envianos un Mensaje</a>
-                </div>
-            </div>
-            <div class="FooterBox">
-                <h2>Horarios</h2>
-                <ul>
-                    <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
-                    <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
-                </ul>
-            </div>
-            <div class="FooterBox">
-                <h2>Contacto</h2>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>2325442601</li>
-                    <li><i class="fa-solid fa-phone"></i>2325402234</li>
-                    <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos@hotmail.com</li>
-                </ul>
-            </div>
-       </div>
-    </footer>
+    <footer class="FooterP container">
+        <div class="FooterContainer">
+             <div class="FooterBoxLogo col-md-4 col-sm-12">
+                 <div class="NavLogo">
+                     <img src="../assets/img/icono.ico" alt="">
+                     <h2>BarraqueHnos</h2>
+                 </div>
+                 <div class="FooterBtn">
+                     <a href="./contact.html" class="Btn">Envianos un Mensaje</a>
+                 </div>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Horarios</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-clock"></i>Lunes a Viernes de 8 a 12 y de 15.30 a 19.30 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Sábados de 8 a 12 hs</li>
+                     <li><i class="fa-solid fa-clock"></i>Domingos cerrado</li>
+                 </ul>
+             </div>
+             <div class="FooterBox col-md-4 col-sm-12">
+                 <h2>Contacto</h2>
+                 <ul>
+                     <li><i class="fa-solid fa-phone"></i>2325442601</li>
+                     <li><i class="fa-solid fa-phone"></i>2325402234</li>
+                     <li><i class="fa-solid fa-envelope"></i>distribuidorabarraquehnos @hotmail.com</li>
+                 </ul>
+             </div>
+        </div>
+     </footer>
+ 
+     <!-- Jquery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+     <!-- Waypoint -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    
+     <!-- Aos animations -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+     <script>
+         AOS.init();
+     </script>
+ 
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <!--Main JS-->
+     <script src="../js/main.js"></script>
 </body>
 </html>

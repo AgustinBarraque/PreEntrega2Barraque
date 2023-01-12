@@ -1,0 +1,59 @@
+                           /*HEADER*/
+  
+  header {
+      display: flex;
+      background-color: #ffffff;
+  }
+  
+  nav {
+      width: 50%;
+      height: 8vh;
+  }
+  
+  .NavLogo {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      font-size: 2em;
+  }
+  
+  .NavLogo h2 {
+      color: #1450e7;
+      font-family: Impact;
+      font-weight: bold;
+  }
+  
+  .NavLogo img {
+      width: 7vh;
+      margin-left: 10px;
+      margin-right: 3px;
+      display: flex;
+  }
+  
+  .NavBar {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: space-evenly;
+      align-items: center; 
+  }
+  
+  .NavBar li a {
+      font-size: 1.4em;
+      color: #4170e7;
+      font-weight: 550;
+      display: flex;
+  }
+  
+  .NavBar li a:hover {
+      color: #1450e7;
+      border-bottom: 1.5px solid #1450e7;
+  }
+  
+  .NavBar li a i {
+      margin-right: 5px;
+  }
+  
+  .NavToggle {
+      display: none;
+  }

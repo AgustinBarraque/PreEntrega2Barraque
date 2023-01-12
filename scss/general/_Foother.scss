@@ -1,0 +1,81 @@
+                                                           /*FOOTER*/
+  
+  .FooterP {
+      padding: 100px 0px;
+      width: 100%;
+      background-size: cover;
+      background-color: #007AFF;
+      -webkit-mask-image: url(../assets/img/background-footer.svg);
+      mask-image: url(../assets/img/background-footer.svg);
+      mask-size: cover;
+  }
+  
+  .FooterContainer{
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      max-width: 100%;
+      padding-top: 15vh;
+      margin: auto;
+  }
+  
+  .FooterBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .FooterBoxLogo {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+  }
+  
+  .FooterBoxLogo .NavLogo {
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .FooterBtn {
+      margin: auto;
+      margin-top: 3%;
+  }
+  
+  .FooterBtn .Btn {
+      background-color: #ffffff;
+  }
+  
+  .FooterBoxLogo h2 {
+      text-shadow: 1px 1px 2px #000;
+      font-weight: bold;
+  }
+  
+  .FooterBox h2 {
+      font-size: 2em;
+      margin-bottom: 25px;
+      font-weight: 700;
+      color: #000;
+      border-bottom: 1px solid #000;
+  }
+  
+  .FooterBox ul {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .FooterBox li {
+      display: flex;
+      align-items: center;
+      font-size: 1.3em;
+      margin: 8px;
+      font-weight: bold;
+      color: #ffffff;
+  }
+  
+  .FooterBox i {
+      margin-right: 8px;
+      color: #000;
+  }
+  

@@ -1,0 +1,55 @@
+                                 /*SOBRE NOSOTROS (ABOUT US)*/ 
+  
+  .InfoConteiner2 {
+      display: flex;
+  }
+                                                              
+  .InfoAU2 { 
+      display: flex;
+      align-items: center;
+      padding: 3vh;
+  }
+  
+  .slider {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  /*------------------About us -------------------------*/
+  .slider {
+    height: 80vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  #SwiperImg {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  #SwiperImg img {
+    display: block;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 720px) {
+    .slider {
+        padding: 1px;
+        margin-top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .slider {
+        height: 60vh;
+    }
+  }

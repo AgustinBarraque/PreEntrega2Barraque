@@ -1,0 +1,229 @@
+                       /*SERVICIOS / CLIENTES*/
+                  
+  
+  
+  .InfoTextC p {
+      font-weight: 500;
+  }
+  
+  .tarjeta:hover{
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  
+  .PedidoContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      margin-top: 5%;
+  }
+  
+  .TarjetaContainer {
+      width: 100%;
+  }
+  
+  .tarjeta {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      height: 300px;
+      max-width: 33%;
+      text-align: center;
+      padding: 40px;
+  }
+  
+  #Tarjetaid .swiper-button-next {
+      display: none;
+  }
+  
+  #Tarjetaid .swiper-button-prev {
+      display: none;
+  }
+  
+  .tarjeta i {
+      font-size: 5em;
+      color: #06283D;
+      height: 60%;
+      padding-top: 5%;
+  }
+  
+  .tarjetaText {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+  
+  .tarjetaText h2 {
+      color: #0B254B;
+      margin-bottom: 20px;
+      font-size: 2em;
+  }
+  
+  .tarjetaText {
+      color: #0B254B;
+  }
+  
+  .tarjetaText h3 {
+      font-weight: 500;
+  }
+  
+  .Pedido h4 {
+      font-size: 2.4em;
+      color: #0B254B;
+      margin-bottom: 2%;
+      display: inline-block;
+      position: relative;
+  }
+  
+  .Pedido h4::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background-color: #007AFF;
+      width: 280px;
+      right: -300px;
+      top: 0.6em;
+  }
+  
+  .Pedido h4::before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background-color: #007AFF;
+      width: 280px;
+      top: 0.6em;
+      left: -300px;
+  }
+  
+  
+  .Pedido {
+      padding: 5% 0px;
+      text-align: center;
+  }
+  
+  #ImagenC img {
+      background-color: #fff;
+  }
+  
+  /*-----------------------------------------CLIENTES CARD*/
+  
+  .ClientesConteiner {
+      display: flex;
+      width: 100%;
+  }
+  
+  .ClientesCard {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 30vw;
+      height: 100%;
+      max-height: 350px;
+      border: 8px solid #3a6ff7;
+      margin: 10px;
+      border-radius: 15px;
+  }
+  
+  .ClientesCard img {
+      width: 50%;
+      height: 100%;
+      max-height: 300px;
+      padding: 10px;
+  }
+  
+  .ClientesConteiner h2 {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #0B254B;
+      text-align: center;
+      margin: auto;
+      margin-right: 10%;
+  }
+  
+
+   @media screen and (max-width: 992px) {
+      .Pedido h4::after {
+          width: 100px;
+          right: -120px;
+          top: 0.6em;
+      }
+      
+      .Pedido h4::before {
+          width: 100px;
+          top: 0.6em;
+          left: -120px;
+      }
+  
+      .ClientesCard {
+          max-width: 49vw;
+      }
+  
+  }
+  
+  @media screen and (max-width: 720px) {
+      .ClientesCard {
+          max-width: 100%;
+          margin: 0;
+      }
+      .ClientesConteiner{
+          display: flex;
+          align-items: center;
+          margin: auto;
+      }
+      .Pedido h4::after {
+          display: none;
+      }
+      
+      .Pedido h4::before {
+          display: none;
+      }
+  
+      .tarjeta {
+          max-width: 100%;
+      }
+  
+      .Pedido .swiper-button-prev {
+          display: none;
+      }
+  
+      #Tarjetaid .swiper-button-next {
+          display: block;
+      }
+      
+      #Tarjetaid .swiper-button-prev {
+          display: block;
+      }
+  
+  
+       #ImagenC img {
+          object-fit: initial;
+      }
+  
+      .Pedido h4 {
+          margin-bottom: 40px;
+          font-weight: bold;
+          color: #007AFF;
+      }
+  }
+  
+  @media screen and (max-width: 430px) {
+      .Pedido h4 {
+          font-size: 2em;
+      }
+  
+      #Tarjetaid h4 {
+          margin-bottom: 0;
+          margin-top: 10%;
+      }
+  
+      #PedidoClientes {
+          margin-bottom: 20%;
+      }
+  
+      .ClientesCard {
+          border: #fff;
+      }
+  
+  }
