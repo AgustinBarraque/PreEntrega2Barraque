@@ -57,12 +57,24 @@
       border: none;
       border-bottom: 1px solid #ccc;
       font-size: 1.4em;
+      outline: none;
   }
   textarea {
       border: none;
       border-bottom: 1px solid #ccc;
       font-size: 1.4em;
       resize: none;
+      outline: none;
+  }
+
+  input:focus {
+    border-bottom: 2px solid #007AFF;
+	transition: 0.1s;
+  }
+
+  textarea:focus {
+    border-bottom: 2px solid #007AFF;
+	transition: 0.1s;
   }
   
   .Imputs {

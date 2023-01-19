@@ -2,8 +2,9 @@
                   
   
   
-  .InfoTextC p {
-      font-weight: 500;
+  .InfoText h3 {
+      color: #007AFF;
+      font-weight: 600;
   }
   
   .tarjeta:hover{
@@ -103,8 +104,8 @@
       text-align: center;
   }
   
-  #ImagenC img {
-      background-color: #fff;
+  #ImagenC {
+      width: 100%;
   }
   
   /*-----------------------------------------CLIENTES CARD*/

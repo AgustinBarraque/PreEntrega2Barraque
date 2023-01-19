@@ -475,6 +475,7 @@ input {
   border: none;
   border-bottom: 1px solid #ccc;
   font-size: 1.4em;
+  outline: none;
 }
 
 textarea {
@@ -482,6 +483,17 @@ textarea {
   border-bottom: 1px solid #ccc;
   font-size: 1.4em;
   resize: none;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #007AFF;
+  transition: 0.1s;
+}
+
+textarea:focus {
+  border-bottom: 2px solid #007AFF;
+  transition: 0.1s;
 }
 
 .Imputs {
@@ -622,8 +634,9 @@ textarea {
   }
 }
 /*SERVICIOS / CLIENTES*/
-.InfoTextC p {
-  font-weight: 500;
+.InfoText h3 {
+  color: #007AFF;
+  font-weight: 600;
 }
 
 .tarjeta:hover {
@@ -722,8 +735,8 @@ textarea {
   text-align: center;
 }
 
-#ImagenC img {
-  background-color: #fff;
+#ImagenC {
+  width: 100%;
 }
 
 /*-----------------------------------------CLIENTES CARD*/
@@ -1007,6 +1020,7 @@ textarea {
   background-color: #007AFF;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
+  border-radius: 5px;
   color: #000000;
   display: flex;
   font-family: impact;
@@ -1038,6 +1052,7 @@ textarea {
   content: "";
   position: absolute;
   border: 1px solid #000000;
+  border-radius: 5px;
   bottom: 4px;
   left: 4px;
   width: calc(100% - 1px);
