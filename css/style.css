@@ -109,13 +109,13 @@ header {
 }
 
 nav {
-  width: 50%;
+  width: 70%;
   height: 8vh;
 }
 
 .NavLogo {
   display: flex;
-  width: 50%;
+  width: 30%;
   align-items: center;
   font-size: 2em;
 }
@@ -162,6 +162,14 @@ nav {
 }
 
 /*BODY* scc 1*/
+.click {
+  font-weight: 600 !important;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+}
+
 .ImgPrincipalTitle {
   display: flex;
   flex-direction: column;
