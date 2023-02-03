@@ -39,6 +39,7 @@
   #SwiperImg img {
     display: block;
     width: 100%;
+    object-fit: cover;
   }
 
   @media screen and (max-width: 720px) {

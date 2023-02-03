@@ -411,6 +411,8 @@ nav {
 #SwiperImg img {
   display: block;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 720px) {
